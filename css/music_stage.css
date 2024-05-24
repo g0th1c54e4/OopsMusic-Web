@@ -1,0 +1,25 @@
+:root{
+    --beatStage_width:8px; /* 音频道总宽度(包括边框s) */
+    --beatStage_border:2px; /* 音频道边框 */
+    --beatStage_num: 200; /* 音频道数量 */
+}
+
+.stage {
+    position: absolute;
+    border-radius: calc(var(--len) / 2);
+    top: 15px;
+    left: 15px;
+}
+.el{
+    opacity: 0.76;
+    position: absolute;
+    background-color: white;
+    width: calc(var(--beatStage_width) - var(--beatStage_border));
+    border:#b59f9f solid var(--beatStage_border);
+    height: 0;
+    rotate: 0;
+    -webkit-transform-origin: 0% 0%;
+    
+    border-bottom-left-radius: calc(var(--beatStage_width) / 2);
+    border-bottom-right-radius: calc(var(--beatStage_width) / 2);
+}

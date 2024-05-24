@@ -1,0 +1,41 @@
+:root{
+    --len: 55vh; /*  律动球大小 (vh) */
+}
+
+#parallax_beatCube{
+    position: absolute;
+}
+
+#parallax_musicStage{
+    position: absolute;
+    opacity: 0.76;
+}
+
+#beatCube{
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-size: 18vh;
+    width: var(--len);
+    height: var(--len);
+    border:white solid 15px;
+    border-radius: var(--len);
+    top: calc(50vh - (var(--len) / 2));
+    left: calc(50vw - (var(--len) / 2));
+    /* background: rgb(238, 95, 176);
+    background: radial-gradient(circle, rgba(238,95,176,1) 0%, rgba(112,80,254,1) 100%); */
+    line-height: var(--len);
+    font-weight: bold;
+    opacity: 0.76;
+}
+
+#ball_border_lace{
+    position: absolute;
+    width: var(--len);
+    height: var(--len);
+    top: calc(50vh - (var(--len) / 2));
+    left: calc(50vw - (var(--len) / 2));
+    border:rgba(0, 0, 0, 0.124) solid 5px;
+    padding: 10px;
+    border-radius: var(--len);
+}

@@ -1,0 +1,73 @@
+#choiceSong{
+    position: absolute;
+    background-color:#8932e5;
+    border-radius: 10px;
+    top: 0;
+    height: 20px;
+    width: 150px;
+    font-size: 1vh;
+    left:calc(50vw - 75px);
+    text-align: center;
+    color:white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#choiceSong>input{
+    opacity: 0;
+}
+
+/* ----------------------------------- */
+#buttons{
+    position: absolute;
+    top: 1px;
+    height: 20px;
+    width: 150px;
+    left: 200px;
+
+    background-color: black;
+}
+
+.button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    outline: inherit;
+}
+
+#play_pause{
+    color: white;
+    position: relative;
+    width: 100px;
+    /* left: -25px; */
+    top: 550px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 24px;
+    border: 5px solid rgb(209,136,244);
+    background-color: rgba(222, 157, 253, 0.428);
+}
+#play_pause:hover{
+    cursor: pointer;
+    background-color: rgb(145, 69, 180);
+}
+
+
+#song_loop{
+    position: relative;
+    top: 550px;
+    /* left: 300px; */
+    color: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 5px solid rgb(209,136,244);
+    background-color: rgba(222, 157, 253, 0.428);
+}
+#song_loop:hover{
+    cursor: pointer;
+    background-color: rgb(145, 69, 180);
+}

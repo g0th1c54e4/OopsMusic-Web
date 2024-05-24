@@ -1,0 +1,69 @@
+:root{
+    --light_ball_offset: 50px; /*  律动球kiai时间闪耀范围 */
+}
+#light_left{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(-90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.27) 47%,
+     rgba(255,255,255,0.42) 62%,
+     rgba(255,255,255,0.55) 75%,
+      rgba(255,255,255,0.61) 81%,
+      rgba(255,255,255,0.67) 87%,
+       rgba(255, 255, 255, 0.672) 90%,
+       rgba(255, 255, 255, 0.681) 93%,
+        rgba(255, 255, 255, 0.694) 96%,
+        rgba(255, 255, 255, 0.698) 98%,
+         rgba(255, 255, 255, 0.697) 100%);
+    height: 100vh;
+    width:20%;
+    opacity: 0;
+}
+
+#light_right{
+    position: absolute;
+    top: 0px;
+    left: 80vw;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.27) 47%,
+     rgba(255,255,255,0.42) 62%,
+     rgba(255,255,255,0.55) 75%,
+      rgba(255,255,255,0.61) 81%,
+      rgba(255,255,255,0.67) 87%,
+       rgba(255, 255, 255, 0.672) 90%,
+       rgba(255, 255, 255, 0.681) 93%,
+        rgba(255, 255, 255, 0.694) 96%,
+        rgba(255, 255, 255, 0.698) 98%,
+         rgba(255, 255, 255, 0.697) 100%);
+    height: 100vh;
+    width: 20%;
+    opacity: 0;
+}
+
+#light_screen{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.14);
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    display: none;
+}
+
+#light_ball{
+    position: absolute;
+    width: var(--len);
+    height: var(--len);
+    top: calc(50vh - (var(--len) / 2) - var(--light_ball_offset));
+    left: calc(50vw - (var(--len) / 2) - var(--light_ball_offset));
+    border: rgba(255, 255, 255, 0.438) solid var(--light_ball_offset);
+    padding: 15px;
+    border-radius: var(--len);
+    opacity: 0;
+}

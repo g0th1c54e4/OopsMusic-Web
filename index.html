@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>OopsMusic</title>
+        <meta charset = "utf-8">
+        <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="icon" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel = "stylesheet" type = "text/css" href = "css/flicker.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/rhythm_ball.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/background.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/music_stage.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/msgbox.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/button.css">
+        <script type = "text/javascript" src = "js/anime.js"></script>
+        <script>
+            if (document.documentElement.clientHeight > document.documentElement.clientWidth){
+                alert("OopsMusic面向宽屏用户, 不支持竖屏浏览。");
+            }
+        </script>
+        <style>
+            *{
+                user-select: none;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                overflow-y: hidden;
+                overflow-x: hidden;
+                background: rgb(209,136,244);
+                background: linear-gradient(90deg, rgba(209,136,244,1) 7%, rgba(250,87,233,1) 30%, rgba(255,100,246,1) 53%, rgba(255,95,193,1) 72%, rgba(255,125,175,1) 96%);
+            }
+        </style>
+
+    </head>
+    <div id = "main_background" class = "layer" data-speed = 7></div>
+    <body>
+        <!-- ------------------------Main------------------------ -->
+        <div id = "light_screen"></div>
+
+        <div id = "parallax_beatCube" class = "layer" data-speed = 18>
+            <div id = "beatCube">
+                <span id>Oops</span>
+
+            </div>
+            <div id = "ball_border_lace"></div>
+            <div id = "light_ball"></div>
+        </div>
+
+        <div id = "choiceSong">
+            <input type = "file" value = "加载" onchange = "loadFile(this.files)" accept = ".oops">
+        </div>
+
+        <div id = "parallax_musicStage" class = "layer" data-speed = 18>
+            <div class = "stage" id = "beat_stage">
+
+            </div>
+        </div>
+
+        <div id = "msgBox" class = "msg_normal">
+            Test
+        </div>
+        
+        <div id = "light_left"></div>
+        <div id = "light_right"></div>
+        <div id = "process_music"></div>
+
+        <!-- ------------------------Main------------------------ -->
+    </body>
+    <script type = "text/javascript" src = "js/music.js"></script>
+</html>

@@ -1,0 +1,21 @@
+#main_background{
+    position: absolute;
+    left: calc((var(--width_value) - 100%) / -2);
+    top: calc((var(--height_value) - 100vh) / -2);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+
+#process_music{
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(112, 39, 176);
+}

@@ -1,0 +1,57 @@
+#msgBox{
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 20vh;
+    top: calc(50% - (20% / 2));
+    font-style: italic;
+    opacity: 0;
+    text-align: center;
+}
+
+.msg_normal{
+    background-color: #000000a4;
+    color:white;
+}
+
+.msg_warning{
+    background-color: rgba(196, 196, 0, 0.783);
+    color:white;
+}
+
+.msg_error{
+    background-color: rgba(255, 0, 0, 0.768);
+    color:white;
+}
+
+.short_msg{
+    font-size: 7vh;
+    line-height: 20vh;
+    white-space: nowrap;  /* 不换行 */
+}
+
+.long_msg{
+    font-size: 4vh;
+    padding-left: 10px;
+    padding-right: 5px;
+    word-break: break-all;
+}
+
+@keyframes msg_print {
+    0%{
+        opacity: 0.75;
+    }
+    15%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    75%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 0;
+    }
+}
